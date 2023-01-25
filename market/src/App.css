@@ -1,38 +1,190 @@
 .App {
   text-align: center;
-}
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #a2afb8;
   min-height: 100vh;
+}
+i {
+  padding: 1.5rem;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.profile-button {
+  margin: 1.5rem;
+}
+.profile-button-link {
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: fixed;
+  color: black;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #ac947e;
+  opacity: 5;
+}
+
+@media screen and (min-width: 601px) {
+  .item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-details {
+    width: 30vh;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    position: fixed;
+    color: #395d97;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15vh;
+    background-color: #ac947e;
+  }
+  .item-container {
+    display: block;
+  }
+  .item-details {
+    /* width: 30vh; */
+    margin-left: 0.5rem;
+  }
+}
+
+#user-img {
+  width: 5rem;
+}
+
+.user-list {
+  /* width: 500px;
+  height: 400px; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Burger */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #ac947e;
+  padding: 2.5em 1.5em 0;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* .item-details {
+  width: 30vh;
+  margin-left: 0.5rem;
 } */
+
+#item-image {
+  margin-top: 0.6rem;
+  border-radius: 20%;
+}
+#item-image:hover {
+  margin-top: 0.6rem;
+  border-radius: 20%;
+  transform: scale(1.1);
+}
+
+#edit-img:hover {
+  transform: scale(1.3);
+}
+
+#item-name {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.delete {
+  margin: 2rem;
+  padding: 0.6rem;
+}
+
+.kudos-button {
+  padding: 0.5rem;
+}
+
+.kudos {
+  background-color: pink;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin: 4px;
+}
