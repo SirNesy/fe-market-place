@@ -14,7 +14,7 @@ function Users() {
   
   useEffect(() => {
     getUsers().then((data) => {
-      setUsers(data);
+      setUsers(data)
       setLoading(false);
     })
     .catch((err) => {
