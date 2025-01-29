@@ -19,7 +19,7 @@ function Item() {
     getItem(item_id).then((data) => {
       setItem(data);
     });
-  }, []);
+  }, [item_id]);
 
   //   useEffect(() => {
   //     postOrder(itemId, username).then((data) => {

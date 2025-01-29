@@ -18,10 +18,10 @@ function Basket() {
       .catch((err) => {
         setError(err);
       });
-    alert(`Order Successfully placed`)
+    alert(`Order Successfully placed.`)
     setItems((current_items) => {
         let current_items_copy = [...current_items];
-        const newItems = current_items_copy.filter((item) => {
+        const newItems = current_items_copy.filter((item) => { 
           let item_obj = { ...item };
           if (item_obj.item_id !== id) {
             return item_obj;
@@ -57,7 +57,7 @@ function Basket() {
       .catch((err) => {
         setError(err);
       });
-  }, []);
+  }, [user.username]);
 
   if (error) {
     return <ErrorPage message={error} />;
