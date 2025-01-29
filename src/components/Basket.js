@@ -35,7 +35,7 @@ function Basket() {
     deleteBasketItem(id, user_name).then((data) => {
       return data;
     });
-    alert(`Item removed from basket`);
+    alert(`Item removed from basket!!`);
     setItems((current_items) => {
       let current_items_copy = [...current_items];
       const newItems = current_items_copy.filter((item) => {
